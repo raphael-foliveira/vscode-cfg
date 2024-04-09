@@ -1,0 +1,247 @@
+{
+  "python.defaultInterpreterPath": "C:\\Users\\Raphael\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+  "files.autoSave": "afterDelay",
+  "explorer.confirmDelete": false,
+  "security.workspace.trust.untrustedFiles": "open",
+  "git.autofetch": true,
+  "explorer.confirmDragAndDrop": false,
+  "editor.fontFamily": "'jetbrainsmono nerd font', monospace",
+  "editor.fontSize": 14,
+  "editor.fontLigatures": true,
+  "editor.maxTokenizationLineLength": 80000,
+  "editor.hover.enabled": true,
+  "zenMode.hideActivityBar": false,
+  "zenMode.hideLineNumbers": false,
+  "zenMode.hideStatusBar": false,
+  "workbench.startupEditor": "none",
+  "files.associations": {
+    "*.tmpl": "html"
+  },
+  "terminal.integrated.profiles.windows": {
+    "Git Bash": {
+      "path": "C:\\Program Files\\Git\\bin\\bash.exe"
+    }
+  },
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "emmet.includeLanguages": {
+    "tmpl": "html",
+    "html": "html",
+    "javascript": "javascriptreact",
+    "django-html": "html",
+    "typescript": "typescriptreact",
+    "jinja-html": "html"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "git.confirmSync": false,
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[php]": {
+    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+  },
+  "vsicons.dontShowNewVersionMessage": true,
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[go]": {
+    "editor.defaultFormatter": "golang.go"
+  },
+  "javascript.format.semicolons": "insert",
+  "codesnap.roundedCorners": false,
+  "codesnap.showWindowControls": false,
+  "codesnap.shutterAction": "copy",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "go.toolsManagement.autoUpdate": true,
+  "python.analysis.autoImportCompletions": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit"
+  },
+  "eslint.validate": ["javascript"],
+  "editor.formatOnSave": true,
+  "eslint.format.enable": true,
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma"
+  },
+  "css.validate": false,
+  "editor.inlineSuggest.enabled": true,
+  "python.autoComplete.extraPaths": [],
+  "python.analysis.extraPaths": [],
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": true,
+    "markdown": false,
+    "scminput": false,
+    "yaml": true,
+    "cpp": false
+  },
+  "git.ignoreMissingGitWarning": true,
+  "gitlens.advanced.messages": {
+    "suppressLineUncommittedWarning": true
+  },
+  "editor.fontVariations": false,
+  "editor.fontWeight": "700",
+  "terminal.integrated.fontWeightBold": "bold",
+  "remote.SSH.remotePlatform": {
+    "sandbox.69mlh5.csb": "linux"
+  },
+  "redhat.telemetry.enabled": true,
+  "editor.minimap.renderCharacters": false,
+  "editor.cursorSurroundingLines": 10,
+  "github.copilot.advanced": {},
+  "[sql]": {
+    "editor.defaultFormatter": "adpyke.vscode-sql-formatter"
+  },
+  "terminal.integrated.fontFamily": "Jetbrainsmono nerd font",
+  "svelte.enable-ts-plugin": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "vscode-office.openOutline": false,
+  "gitlens.graph.minimap.enabled": false,
+  "[dart]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.rulers": [80],
+    "editor.selectionHighlight": false,
+    "editor.suggestSelection": "first",
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": "off"
+  },
+  "prettier.singleQuote": true,
+  "prettier.jsxSingleQuote": true,
+  "mdb.confirmRunAll": false,
+  "sqltools.useNodeRuntime": true,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "[cpp]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
+  "C_Cpp.vcFormat.newLine.beforeOpenBrace.function": "newLine",
+  "C_Cpp.vcFormat.newLine.beforeOpenBrace.lambda": "newLine",
+  "C_Cpp.vcFormat.newLine.beforeOpenBrace.namespace": "newLine",
+  "C_Cpp.vcFormat.newLine.beforeOpenBrace.type": "newLine",
+  "C_Cpp.formatting": "vcFormat",
+  "debug.onTaskErrors": "debugAnyway",
+  "[c]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
+  "C_Cpp.autocompleteAddParentheses": true,
+  "C_Cpp.intelliSenseUpdateDelay": 500,
+  "C_Cpp.clang_format_sortIncludes": true,
+  "C_Cpp.vcFormat.newLine.beforeOpenBrace.block": "newLine",
+  "python.analysis.typeCheckingMode": "basic",
+  "[csharp]": {
+    "editor.defaultFormatter": "ms-dotnettools.csharp"
+  },
+  "[svelte]": {
+    "editor.defaultFormatter": "svelte.svelte-vscode"
+  },
+  "window.confirmSaveUntitledWorkspace": false,
+  "jest.runMode": "on-demand",
+  "java.test.config": {},
+  "[java]": {
+    "editor.defaultFormatter": "redhat.java"
+  },
+  "security.promptForLocalFileProtocolHandling": false,
+  "workbench.editorAssociations": {
+    "{git,gitlens}:/**/*.{md,csv}": "default"
+  },
+  "workbench.colorCustomizations": {
+    "[One Dark Pro Darker]": {
+      "editor.background": "#080808",
+      "terminal.background": "#080808",
+      "sideBar.background": "#080808",
+      "sideBar.border": "#444",
+      "activityBar.background": "#080808",
+      "activityBar.border": "#444",
+      "titleBar.activeBackground": "#080808"
+    },
+    "[Default Dark Modern]": {
+      "editor.background": "#080808",
+      "terminal.background": "#080808",
+      "sideBar.background": "#080808",
+
+      "panel.background": "#080808"
+    }
+  },
+  "workbench.editor.editorActionsLocation": "titleBar",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "One Dark Pro Darker",
+  "window.customTitleBarVisibility": "auto",
+  "material-icon-theme.activeIconPack": "none",
+  "editor.lineNumbers": "relative",
+  "vim.useSystemClipboard": true,
+  "vim.startInInsertMode": false,
+  "vim.leader": "<space>",
+  "vim.easymotion": true,
+  "vim.easymotionDimBackground": true,
+  "vim.smartRelativeLine": true,
+  "vim.neovimPath": "/usr/bin/nvim",
+  "vim.enableNeovim": true,
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<C-h>"],
+      "commands": ["workbench.view.explorer"]
+    },
+    {
+      "before": ["<leader>", "<leader>"],
+      "commands": ["workbench.action.quickOpen"]
+    },
+    {
+      "before": ["s"],
+      "after": ["<leader>", "<leader>", "2", "s"]
+    },
+    {
+      "before": ["<leader>", "b", "o"],
+      "commands": ["workbench.action.closeOtherEditors"]
+    },
+    {
+      "before": ["<leader>", "s"],
+      "after": ["<leader>", "<leader>", "2", "s"]
+    },
+    {
+      "before": ["<leader>", "b", "d"],
+      "commands": ["workbench.action.closeActiveEditor"]
+    },
+    { "before": ["K"], "commands": ["editor.action.showHover"] },
+    { "before": ["g", "I"], "commands": ["editor.action.goToImplementation"] },
+    {
+      "before": ["<C-space>"],
+      "commands": ["editor.action.smartSelect.expand"]
+    },
+    {
+      "before": ["<leader>", "c", "a"],
+      "commands": ["editor.action.quickFix"]
+    },
+    {
+      "before": ["<S-l>"],
+      "commands": ["workbench.action.nextEditor"]
+    },
+    {
+      "before": ["<S-h>"],
+      "commands": ["workbench.action.previousEditor"]
+    },
+    { "before": ["<leader>", "n"], "after": ":nohl" },
+    { "before": ["<C-j>"], "commands": ["editor.action.insertCursorBelow"] },
+    { "before": ["<C-k>"], "commands": ["editor.action.insertCursorAbove"] }
+  ],
+  "vim.visualModeKeyBindings": [
+    {
+      "before": ["<C-space>"],
+      "commands": ["editor.action.smartSelect.expand"]
+    }
+  ],
+  "vscode-office.editorTheme": "Auto",
+  "files.insertFinalNewline": false,
+  "python.languageServer": "Pylance",
+  "gitlens.views.branches.branches.layout": "list"
+}
