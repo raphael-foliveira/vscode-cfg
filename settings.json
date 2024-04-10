@@ -204,10 +204,6 @@
       "commands": ["workbench.action.closeOtherEditors"]
     },
     {
-      "before": ["<leader>", "s"],
-      "after": ["<leader>", "<leader>", "2", "s"]
-    },
-    {
       "before": ["<leader>", "b", "d"],
       "commands": ["workbench.action.closeActiveEditor"]
     },
