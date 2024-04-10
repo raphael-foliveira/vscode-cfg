@@ -1,5 +1,4 @@
 {
-  "python.defaultInterpreterPath": "C:\\Users\\Raphael\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
   "files.autoSave": "afterDelay",
   "explorer.confirmDelete": false,
   "security.workspace.trust.untrustedFiles": "open",
@@ -17,12 +16,6 @@
   "files.associations": {
     "*.tmpl": "html"
   },
-  "terminal.integrated.profiles.windows": {
-    "Git Bash": {
-      "path": "C:\\Program Files\\Git\\bin\\bash.exe"
-    }
-  },
-  "terminal.integrated.defaultProfile.windows": "Git Bash",
   "emmet.includeLanguages": {
     "tmpl": "html",
     "html": "html",
