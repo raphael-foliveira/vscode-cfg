@@ -175,7 +175,6 @@
   },
   "workbench.editor.editorActionsLocation": "titleBar",
   "workbench.iconTheme": "material-icon-theme",
-  "workbench.colorTheme": "One Dark Pro Darker",
   "window.customTitleBarVisibility": "auto",
   "material-icon-theme.activeIconPack": "none",
   "editor.lineNumbers": "relative",
@@ -232,7 +231,15 @@
     },
     { "before": ["<leader>", "n"], "after": ":nohl" },
     { "before": ["<C-j>"], "commands": ["editor.action.insertCursorBelow"] },
-    { "before": ["<C-k>"], "commands": ["editor.action.insertCursorAbove"] }
+    { "before": ["<C-k>"], "commands": ["editor.action.insertCursorAbove"] },
+    {
+      "before": ["<leader>", "s", "s"],
+      "commands": ["workbench.action.gotoSymbol"]
+    },
+    {
+      "before": ["<leader>", "s", "S"],
+      "commands": ["workbench.action.showAllSymbols"]
+    }
   ],
   "vim.visualModeKeyBindings": [
     {
@@ -243,5 +250,6 @@
   "vscode-office.editorTheme": "Auto",
   "files.insertFinalNewline": false,
   "python.languageServer": "Pylance",
-  "gitlens.views.branches.branches.layout": "list"
+  "gitlens.views.branches.branches.layout": "list",
+  "workbench.colorTheme": "One Dark Pro Darker"
 }
