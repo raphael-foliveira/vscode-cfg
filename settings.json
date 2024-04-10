@@ -252,7 +252,6 @@
     }
   ],
   "vscode-office.editorTheme": "Auto",
-  "files.insertFinalNewline": false,
   "python.languageServer": "Pylance",
   "gitlens.views.branches.branches.layout": "list",
   "workbench.colorTheme": "One Dark Pro Darker"
