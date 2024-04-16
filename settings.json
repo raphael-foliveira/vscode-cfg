@@ -5,6 +5,8 @@
   "git.autofetch": true,
   "explorer.confirmDragAndDrop": false,
   "editor.fontFamily": "'jetbrainsmono nerd font', monospace",
+  "editor.fontVariations": false,
+  "editor.fontWeight": "700",
   "editor.fontSize": 14,
   "editor.fontLigatures": true,
   "editor.maxTokenizationLineLength": 80000,
@@ -21,7 +23,6 @@
     "html": "html",
     "javascript": "javascriptreact",
     "django-html": "html",
-    "typescript": "typescriptreact",
     "jinja-html": "html"
   },
   "[javascript]": {
@@ -46,7 +47,7 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[typescriptreact]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[go]": {
     "editor.defaultFormatter": "golang.go"
@@ -83,8 +84,6 @@
   "gitlens.advanced.messages": {
     "suppressLineUncommittedWarning": true
   },
-  "editor.fontVariations": false,
-  "editor.fontWeight": "700",
   "terminal.integrated.fontWeightBold": "bold",
   "remote.SSH.remotePlatform": {
     "sandbox.69mlh5.csb": "linux"
@@ -175,9 +174,9 @@
   "vim.startInInsertMode": false,
   "vim.leader": "<space>",
   "vim.easymotion": true,
-  "vim.easymotionDimBackground": true,
   "vim.smartRelativeLine": true,
   "vim.neovimPath": "/usr/bin/nvim",
+  "vim.smartcase": true,
   "vim.enableNeovim": true,
   "vim.normalModeKeyBindingsNonRecursive": [
     {
@@ -218,7 +217,7 @@
       "before": ["<S-h>"],
       "commands": ["workbench.action.previousEditor"]
     },
-    { "before": ["<leader>", "n"], "after": ":nohl" },
+    { "before": ["<C-c>"], "after": ":nohl" },
     { "before": ["<C-j>"], "commands": ["editor.action.insertCursorBelow"] },
     { "before": ["<C-k>"], "commands": ["editor.action.insertCursorAbove"] },
     {
@@ -236,6 +235,18 @@
     {
       "before": ["<leader>", "c", "r"],
       "commands": ["editor.action.rename"]
+    },
+    {
+      "before": ["[", "e"],
+      "commands": ["editor.action.marker.prev"]
+    },
+    {
+      "before": ["]", "e"],
+      "commands": ["editor.action.marker.next"]
+    },
+    {
+      "before": ["g", "r"],
+      "commands": ["editor.action.goToReferences"]
     }
   ],
   "vim.visualModeKeyBindings": [
@@ -246,6 +257,5 @@
   ],
   "vscode-office.editorTheme": "Auto",
   "python.languageServer": "Pylance",
-  "gitlens.views.branches.branches.layout": "list",
-  "workbench.colorTheme": "One Dark Pro Darker"
+  "gitlens.views.branches.branches.layout": "list"
 }
