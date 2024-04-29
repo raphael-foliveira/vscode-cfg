@@ -64,11 +64,6 @@
     "when": "editorTextFocus && !editorReadonly"
   },
   {
-    "key": "ctrl+e ctrl+e",
-    "command": "-workbench.action.quickOpen",
-    "when": "!config.sqltools.disableChordKeybindings && !editorHasSelection && !editorTextFocus"
-  },
-  {
     "key": "ctrl+e ctrl+q",
     "command": "-sqltools.bookmarkSelection",
     "when": "editorHasSelection && editorTextFocus && !config.sqltools.disableChordKeybindings"
@@ -119,42 +114,8 @@
     "when": "editorTextFocus && github.copilot.activated && !inInteractiveInput && !interactiveEditorFocused"
   },
   {
-    "key": "ctrl+e",
-    "command": "-workbench.action.quickOpen"
-  },
-  {
-    "key": "ctrl+p",
-    "command": "-extension.vim_ctrl+p",
-    "when": "editorTextFocus && vim.active && vim.use<C-p> && !inDebugRepl || vim.active && vim.use<C-p> && !inDebugRepl && vim.mode == 'CommandlineInProgress' || vim.active && vim.use<C-p> && !inDebugRepl && vim.mode == 'SearchInProgressMode'"
-  },
-  {
-    "key": "ctrl+d",
-    "command": "-extension.vim_ctrl+d",
-    "when": "editorTextFocus && vim.active && vim.use<C-d> && !inDebugRepl"
-  },
-  {
-    "key": "ctrl+w",
-    "command": "-extension.vim_ctrl+w",
-    "when": "editorTextFocus && vim.active && vim.use<C-w> && !inDebugRepl"
-  },
-  {
-    "key": "ctrl+b",
-    "command": "-extension.vim_ctrl+b",
-    "when": "editorTextFocus && vim.active && vim.use<C-b> && !inDebugRepl && vim.mode != 'Insert'"
-  },
-  {
     "key": "ctrl+alt+[Minus]",
     "command": "workbench.action.navigateBack"
-  },
-  {
-    "key": "shift+tab",
-    "command": "-extension.vim_shift+tab",
-    "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode != 'Insert'"
-  },
-  {
-    "key": "tab",
-    "command": "-extension.vim_tab",
-    "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode != 'Insert'"
   },
   {
     "key": "shift+alt+right",
@@ -185,5 +146,95 @@
     "key": "ctrl+/",
     "command": "workbench.action.terminal.toggleTerminal",
     "when": "terminal.active"
+  },
+  {
+    "key": "alt+l alt+o",
+    "command": "-extension.liveServer.goOnline",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+l alt+c",
+    "command": "-extension.liveServer.goOffline",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+l",
+    "command": "-toggleFindInSelection",
+    "when": "editorFocus"
+  },
+  {
+    "key": "alt+l",
+    "command": "-toggleSearchEditorContextLines",
+    "when": "inSearchEditor"
+  },
+  {
+    "key": "space space",
+    "command": "workbench.action.quickOpen",
+    "when": "editorTextFocus && neovim.mode == 'normal'"
+  },
+  {
+    "key": "space b d",
+    "command": "workbench.action.closeActiveEditor",
+    "when": "editorTextFocus && neovim.mode == 'normal'"
+  },
+  {
+    "key": "space b o",
+    "command": "workbench.action.closeOtherEditors",
+    "when": "editorTextFocus && neovim.mode == 'normal'"
+  },
+  {
+    "key": "space t d",
+    "command": "testing.debugAtCursor",
+    "when": "editorTextFocus && neovim.mode == 'normal'"
+  },
+  {
+    "key": "space c a",
+    "command": "editor.action.quickFix",
+    "when": "editorTextFocus && neovim.mode == 'normal'"
+  },
+  {
+    "key": "ctrl+j",
+    "command": "editor.action.insertCursorBelow",
+    "when": "editorTextFocus && neovim.mode == 'normal'"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "editor.action.insertCursorAbove",
+    "when": "editorTextFocus && neovim.mode == 'normal'"
+  },
+  {
+    "key": "space /",
+    "command": "workbench.action.findInFiles",
+    "when": "editorTextFocus && neovim.mode == 'normal'"
+  },
+  {
+    "command": "-editor.action.startFindReplaceAction",
+    "key": "ctrl+h",
+    "when": "editorFocus || editorIsOpen"
+  },
+  {
+    "key": "ctrl+space",
+    "command": "editor.action.smartSelect.grow",
+    "when": "editorTextFocus && neovim.mode != 'insert'"
+  },
+  {
+    "key": "space d b",
+    "command": "editor.debug.action.toggleBreakpoint",
+    "when": "editorTextFocus && neovim.mode != 'insert'"
+  },
+  {
+    "key": "space c r",
+    "command": "editor.action.rename",
+    "when": "editorTextFocus && neovim.mode == 'normal'"
+  },
+  {
+    "key": "space c shift+r",
+    "command": "editor.action.organizeImports",
+    "when": "editorTextFocus && neovim.mode == 'normal'"
+  },
+  {
+    "key": "ctrl+d",
+    "command": "-vscode-neovim.send",
+    "when": "editorTextFocus && neovim.ctrlKeysInsert.d && neovim.init && neovim.mode == 'insert' && editorLangId not in 'neovim.editorLangIdExclusions'"
   }
 ]

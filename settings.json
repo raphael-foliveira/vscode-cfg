@@ -147,115 +147,21 @@
   "workbench.editorAssociations": {
     "{git,gitlens}:/**/*.{md,csv}": "default"
   },
-  "workbench.colorCustomizations": {
-    "[One Dark Pro Darker]": {
-      "editor.background": "#080808",
-      "terminal.background": "#080808",
-      "sideBar.background": "#080808",
-      "sideBar.border": "#444",
-      "activityBar.background": "#080808",
-      "activityBar.border": "#444",
-      "titleBar.activeBackground": "#080808"
-    },
-    "[Default Dark Modern]": {
-      "editor.background": "#080808",
-      "terminal.background": "#080808",
-      "sideBar.background": "#080808",
-
-      "panel.background": "#080808"
-    }
-  },
   "workbench.editor.editorActionsLocation": "titleBar",
   "workbench.iconTheme": "material-icon-theme",
   "window.customTitleBarVisibility": "auto",
   "material-icon-theme.activeIconPack": "none",
   "editor.lineNumbers": "relative",
-  "vim.useSystemClipboard": true,
-  "vim.startInInsertMode": false,
-  "vim.leader": "<space>",
-  "vim.easymotion": true,
-  "vim.smartRelativeLine": true,
-  "vim.neovimPath": "/usr/bin/nvim",
-  "vim.smartcase": true,
-  "vim.enableNeovim": true,
-  "vim.normalModeKeyBindingsNonRecursive": [
-    {
-      "before": ["<C-h>"],
-      "commands": ["workbench.view.explorer"]
-    },
-    {
-      "before": ["<leader>", "<leader>"],
-      "commands": ["workbench.action.quickOpen"]
-    },
-    {
-      "before": ["s"],
-      "after": ["<leader>", "<leader>", "2", "s"]
-    },
-    {
-      "before": ["<leader>", "b", "o"],
-      "commands": ["workbench.action.closeOtherEditors"]
-    },
-    {
-      "before": ["<leader>", "b", "d"],
-      "commands": ["workbench.action.closeActiveEditor"]
-    },
-    { "before": ["K"], "commands": ["editor.action.showHover"] },
-    { "before": ["g", "I"], "commands": ["editor.action.goToImplementation"] },
-    {
-      "before": ["<C-space>"],
-      "commands": ["editor.action.smartSelect.expand"]
-    },
-    {
-      "before": ["<leader>", "c", "a"],
-      "commands": ["editor.action.quickFix"]
-    },
-    {
-      "before": ["<S-l>"],
-      "commands": ["workbench.action.nextEditor"]
-    },
-    {
-      "before": ["<S-h>"],
-      "commands": ["workbench.action.previousEditor"]
-    },
-    { "before": ["<C-c>"], "after": ":nohl" },
-    { "before": ["<C-j>"], "commands": ["editor.action.insertCursorBelow"] },
-    { "before": ["<C-k>"], "commands": ["editor.action.insertCursorAbove"] },
-    {
-      "before": ["<leader>", "s", "s"],
-      "commands": ["workbench.action.gotoSymbol"]
-    },
-    {
-      "before": ["<leader>", "s", "S"],
-      "commands": ["workbench.action.showAllSymbols"]
-    },
-    {
-      "before": ["<leader>", "c", "R"],
-      "commands": ["editor.action.organizeImports"]
-    },
-    {
-      "before": ["<leader>", "c", "r"],
-      "commands": ["editor.action.rename"]
-    },
-    {
-      "before": ["[", "e"],
-      "commands": ["editor.action.marker.prev"]
-    },
-    {
-      "before": ["]", "e"],
-      "commands": ["editor.action.marker.next"]
-    },
-    {
-      "before": ["g", "r"],
-      "commands": ["editor.action.goToReferences"]
-    }
-  ],
-  "vim.visualModeKeyBindings": [
-    {
-      "before": ["<C-space>"],
-      "commands": ["editor.action.smartSelect.expand"]
-    }
-  ],
   "vscode-office.editorTheme": "Auto",
   "python.languageServer": "Pylance",
-  "gitlens.views.branches.branches.layout": "list"
+  "gitlens.views.branches.branches.layout": "list",
+  "gopls": {
+    "ui.diagnostic.analyses": {
+      "structtag": true
+    }
+  },
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+  },
+  "workbench.colorTheme": "One Dark Pro Darker"
 }
