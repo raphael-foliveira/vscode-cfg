@@ -5,11 +5,6 @@
     "when": "editorTextFocus && !editorReadonly"
   },
   {
-    "key": "ctrl+/",
-    "command": "-editor.action.commentLine",
-    "when": "editorTextFocus && !editorReadonly"
-  },
-  {
     "key": "ctrl+up",
     "command": "editor.action.insertCursorAbove",
     "when": "editorTextFocus"
@@ -123,31 +118,6 @@
     "when": "editorTextFocus"
   },
   {
-    "key": "ctrl+l",
-    "command": "workbench.action.focusActiveEditorGroup",
-    "when": "sideBarFocus"
-  },
-  {
-    "key": "alt+j",
-    "command": "editor.action.moveLinesDownAction",
-    "when": "editorTextFocus && !editorReadonly"
-  },
-  {
-    "key": "alt+k",
-    "command": "editor.action.moveLinesUpAction",
-    "when": "editorTextFocus && !editorReadonly"
-  },
-  {
-    "key": "ctrl+c",
-    "command": "workbench.action.closeQuickOpen",
-    "when": "inQuickOpen"
-  },
-  {
-    "key": "ctrl+/",
-    "command": "workbench.action.terminal.toggleTerminal",
-    "when": "terminal.active"
-  },
-  {
     "key": "alt+l alt+o",
     "command": "-extension.liveServer.goOnline",
     "when": "editorTextFocus"
@@ -166,75 +136,5 @@
     "key": "alt+l",
     "command": "-toggleSearchEditorContextLines",
     "when": "inSearchEditor"
-  },
-  {
-    "key": "space space",
-    "command": "workbench.action.quickOpen",
-    "when": "editorTextFocus && neovim.mode == 'normal'"
-  },
-  {
-    "key": "space b d",
-    "command": "workbench.action.closeActiveEditor",
-    "when": "editorTextFocus && neovim.mode == 'normal'"
-  },
-  {
-    "key": "space b o",
-    "command": "workbench.action.closeOtherEditors",
-    "when": "editorTextFocus && neovim.mode == 'normal'"
-  },
-  {
-    "key": "space t d",
-    "command": "testing.debugAtCursor",
-    "when": "editorTextFocus && neovim.mode == 'normal'"
-  },
-  {
-    "key": "space c a",
-    "command": "editor.action.quickFix",
-    "when": "editorTextFocus && neovim.mode == 'normal'"
-  },
-  {
-    "key": "ctrl+j",
-    "command": "editor.action.insertCursorBelow",
-    "when": "editorTextFocus && neovim.mode == 'normal'"
-  },
-  {
-    "key": "ctrl+k",
-    "command": "editor.action.insertCursorAbove",
-    "when": "editorTextFocus && neovim.mode == 'normal'"
-  },
-  {
-    "key": "space /",
-    "command": "workbench.action.findInFiles",
-    "when": "editorTextFocus && neovim.mode == 'normal'"
-  },
-  {
-    "command": "-editor.action.startFindReplaceAction",
-    "key": "ctrl+h",
-    "when": "editorFocus || editorIsOpen"
-  },
-  {
-    "key": "ctrl+space",
-    "command": "editor.action.smartSelect.grow",
-    "when": "editorTextFocus && neovim.mode != 'insert'"
-  },
-  {
-    "key": "space d b",
-    "command": "editor.debug.action.toggleBreakpoint",
-    "when": "editorTextFocus && neovim.mode != 'insert'"
-  },
-  {
-    "key": "space c r",
-    "command": "editor.action.rename",
-    "when": "editorTextFocus && neovim.mode == 'normal'"
-  },
-  {
-    "key": "space c shift+r",
-    "command": "editor.action.organizeImports",
-    "when": "editorTextFocus && neovim.mode == 'normal'"
-  },
-  {
-    "key": "ctrl+d",
-    "command": "-vscode-neovim.send",
-    "when": "editorTextFocus && neovim.ctrlKeysInsert.d && neovim.init && neovim.mode == 'insert' && editorLangId not in 'neovim.editorLangIdExclusions'"
   }
 ]

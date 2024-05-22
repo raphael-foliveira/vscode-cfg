@@ -158,10 +158,102 @@
   "gopls": {
     "ui.diagnostic.analyses": {
       "structtag": true
-    }
+    },
+    "formatting.gofumpt": true
   },
   "extensions.experimental.affinity": {
     "asvetliakov.vscode-neovim": 1
   },
-  "workbench.colorTheme": "One Dark Pro Darker"
+  "vscode-neovim.completionDelay": 500,
+  "catppuccin.italicKeywords": false,
+  "workbench.colorTheme": "One Dark Pro Darker",
+  "oneDarkPro.italic": false,
+  "prisma.showPrismaDataPlatformNotification": false,
+  "vim.useSystemClipboard": true,
+  "vim.highlightedyank.enable": true,
+  "vim.leader": "<Space>",
+  "vim.handleKeys": {},
+  "vim.easymotion": true,
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<S-k>"],
+      "after": ["g", "h"]
+    },
+    {
+      "before": ["<S-j>"],
+      "after": ["nop"]
+    },
+    {
+      "before": ["<C-c>"],
+      "after": [":nohl"]
+    },
+    {
+      "before": ["<A-k>"],
+      "commands": ["editor.action.moveLinesUpAction"]
+    },
+    {
+      "before": ["<A-j>"],
+      "commands": ["editor.action.moveLinesDownAction"]
+    },
+    {
+      "before": ["<leader>", "<leader>"],
+      "commands": ["workbench.action.quickOpen"]
+    },
+    {
+      "before": ["s"],
+      "after": ["<leader>", "<leader>", "/"]
+    },
+    {
+      "before": ["<leader>", "b", "d"],
+      "commands": ["workbench.action.closeActiveEditor"]
+    },
+    {
+      "before": ["<leader>", "b", "o"],
+      "commands": ["workbench.action.closeOtherEditors"]
+    },
+    {
+      "before": ["<S-l>"],
+      "commands": ["workbench.action.nextEditorInGroup"]
+    },
+    {
+      "before": ["<S-h>"],
+      "commands": ["workbench.action.previousEditorInGroup"]
+    },
+    {
+      "before": ["<leader>", "e"],
+      "commands": ["workbench.action.toggleSidebarVisibility"]
+    },
+    {
+      "before": ["<leader>", "s", "s"],
+      "commands": ["workbench.action.gotoSymbol"]
+    },
+    {
+      "before": ["<leader>", "c", "a"],
+      "commands": ["editor.action.quickFix"]
+    },
+    {
+      "before": ["<leader>", "c", "R"],
+      "commands": ["editor.action.organizeImports"]
+    },
+    {
+      "before": ["<leader>", "c", "r"],
+      "commands": ["editor.action.rename"]
+    },
+    {
+      "before": ["<leader>", "d", "b"],
+      "commands": ["editor.debug.action.toggleBreakpoint"]
+    },
+    {
+      "before": ["<leader>", "<leader>"],
+      "commands": ["workbench.action.quickOpen"]
+    },
+    {
+      "before": ["<C-p>"],
+      "commands": ["workbench.action.quickOpen"]
+    },
+    {
+      "before": ["<space>", "/"],
+      "commands": ["workbench.action.findInFiles"]
+    }
+  ]
 }
