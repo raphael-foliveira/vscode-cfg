@@ -130,7 +130,7 @@
   "C_Cpp.intelliSenseUpdateDelay": 500,
   "C_Cpp.clang_format_sortIncludes": true,
   "C_Cpp.vcFormat.newLine.beforeOpenBrace.block": "newLine",
-  "python.analysis.typeCheckingMode": "basic",
+  "python.analysis.typeCheckingMode": "standard",
   "[csharp]": {
     "editor.defaultFormatter": "ms-dotnettools.csharp"
   },
@@ -148,17 +148,15 @@
     "{git,gitlens}:/**/*.{md,csv}": "default"
   },
   "workbench.editor.editorActionsLocation": "titleBar",
-  "workbench.iconTheme": "material-icon-theme",
-  "window.customTitleBarVisibility": "auto",
+  "workbench.iconTheme": "vscode-icons",
   "material-icon-theme.activeIconPack": "none",
   "editor.lineNumbers": "relative",
   "vscode-office.editorTheme": "Auto",
   "python.languageServer": "Pylance",
   "gitlens.views.branches.branches.layout": "list",
+  "python.defaultInterpreterPath": "C:\\Users\\Raphael\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
   "gopls": {
-    "ui.diagnostic.analyses": {
-      "structtag": true
-    },
+    "ui.diagnostic.analyses": {},
     "formatting.gofumpt": true
   },
   "extensions.experimental.affinity": {
@@ -166,7 +164,6 @@
   },
   "vscode-neovim.completionDelay": 500,
   "catppuccin.italicKeywords": false,
-  "workbench.colorTheme": "One Dark Pro Darker",
   "oneDarkPro.italic": false,
   "prisma.showPrismaDataPlatformNotification": false,
   "vim.useSystemClipboard": true,
@@ -232,7 +229,7 @@
       "commands": ["editor.action.quickFix"]
     },
     {
-      "before": ["<leader>", "c", "R"],
+      "before": ["<leader>", "c", "o"],
       "commands": ["editor.action.organizeImports"]
     },
     {
@@ -254,6 +251,34 @@
     {
       "before": ["<space>", "/"],
       "commands": ["workbench.action.findInFiles"]
+    },
+    {
+      "before": ["g", "I"],
+      "commands": ["editor.action.peekImplementation"]
+    },
+    {
+      "before": ["g", "r"],
+      "commands": ["editor.action.referenceSearch.trigger"]
+    },
+    {
+      "before": ["<C-space>"],
+      "commands": ["editor.action.smartSelect.expand"]
     }
-  ]
+  ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<C-space>"],
+      "commands": ["editor.action.smartSelect.expand"]
+    },
+    {
+      "before": ["<BS>"],
+      "commands": ["editor.action.smartSelect.shrink"]
+    }
+  ],
+  "[templ]": {
+    "editor.defaultFormatter": "a-h.templ"
+  },
+  "github.copilot.editor.enableAutoCompletions": true,
+  "window.customTitleBarVisibility": "auto",
+  "typescript.preferences.importModuleSpecifier": "relative"
 }
