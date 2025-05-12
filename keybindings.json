@@ -143,11 +143,6 @@
     "when": "inQuickOpen"
   },
   {
-    "key": "ctrl+l",
-    "command": "workbench.action.focusActiveEditorGroup",
-    "when": "sideBarFocus"
-  },
-  {
     "key": "alt+j",
     "command": "editor.action.moveLinesDownAction",
     "when": "editorTextFocus && !editorReadonly && vim.active"
@@ -160,17 +155,12 @@
   {
     "key": "alt+l",
     "command": "editor.action.indentLines",
-    "when": "editorTextFocus && !editorReadonly"
+    "when": "editorTextFocus && !editorReadonly && vim.mode != 'Insert'"
   },
   {
     "key": "alt+h",
     "command": "editor.action.outdentLines",
     "when": "editorTextFocus && !editorReadonly"
-  },
-  {
-    "key": "ctrl+h",
-    "command": "workbench.explorer.fileView.focus",
-    "when": "editorTextFocus"
   },
   {
     "key": "ctrl+/",
@@ -191,5 +181,123 @@
     "key": "ctrl+enter",
     "command": "-github.copilot.generate",
     "when": "editorTextFocus && github.copilot.activated && !commentEditorFocused && !inInteractiveInput && !interactiveEditorFocused"
+  },
+  {
+    "key": "ctrl+\\",
+    "command": "workbench.action.terminal.toggleTerminal",
+    "when": "terminal.active && vim.mode == 'Normal'"
+  },
+  {
+    "key": "a",
+    "command": "workbench.files.action.createFileFromExplorer",
+    "when": "vim.active && filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !inputFocus && vim.active"
+  },
+  {
+    "key": "y",
+    "command": "filesExplorer.copy",
+    "when": "vim.active && filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !inputFocus && vim.active"
+  },
+  {
+    "key": "x",
+    "command": "filesExplorer.cut",
+    "when": "vim.active && filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !inputFocus && vim.active"
+  },
+  {
+    "key": "p",
+    "command": "filesExplorer.paste",
+    "when": "vim.active && filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !inputFocus && vim.active"
+  },
+  {
+    "key": "r",
+    "command": "renameFile",
+    "when": "vim.active && filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !inputFocus && vim.active"
+  },
+  {
+    "key": "d",
+    "command": "deleteFile",
+    "when": "vim.active && filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !inputFocus && vim.active"
+  },
+  {
+    "key": "alt+l",
+    "command": "editor.action.inlineSuggest.commit",
+    "when": "inlineSuggestionHasIndentationLessThanTabSize && inlineSuggestionVisible && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible"
+  },
+  {
+    "key": "ctrl+h",
+    "command": "workbench.action.focusLeftGroup",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+j",
+    "command": "workbench.action.focusBelowGroup",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "workbench.action.focusAboveGroup",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+l",
+    "command": "workbench.action.focusRightGroup",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+h",
+    "command": "workbench.files.action.focusFilesExplorer",
+    "when": "editorTextFocus && activeEditorGroupIndex == 1"
+  },
+  {
+    "key": "ctrl+l",
+    "command": "workbench.action.focusActiveEditorGroup",
+    "when": "explorerViewletVisible && filesExplorerFocus"
+  },
+  {
+    "key": "ctrl+alt+/",
+    "command": "workbench.action.chat.attachContext",
+    "when": "inChatInput && chatLocation == 'editing-session' || inChatInput && chatLocation == 'editor' || inChatInput && chatLocation == 'notebook' || inChatInput && chatLocation == 'panel' || inChatInput && chatLocation == 'terminal'"
+  },
+  {
+    "key": "ctrl+/",
+    "command": "-workbench.action.chat.attachContext",
+    "when": "inChatInput && chatLocation == 'editing-session' || inChatInput && chatLocation == 'editor' || inChatInput && chatLocation == 'notebook' || inChatInput && chatLocation == 'panel' || inChatInput && chatLocation == 'terminal'"
+  },
+  {
+    "key": "ctrl+alt+i",
+    "command": "composer.startComposerPrompt"
+  },
+  {
+    "key": "ctrl+i",
+    "command": "-composer.startComposerPrompt"
+  },
+  {
+    "key": "ctrl+alt+k",
+    "command": "aipopup.action.modal.generate",
+    "when": "editorFocus && !composerBarIsVisible"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "-aipopup.action.modal.generate",
+    "when": "editorFocus && !composerBarIsVisible"
+  },
+  {
+    "key": "ctrl+alt+l",
+    "command": "workbench.action.chat.newChat",
+    "when": "chatIsEnabled && inChat && chatLocation != 'editing-session'"
+  },
+  {
+    "key": "ctrl+l",
+    "command": "-workbench.action.chat.newChat",
+    "when": "chatIsEnabled && inChat && chatLocation != 'editing-session'"
+  },
+  {
+    "key": "ctrl+up",
+    "command": "workbench.action.terminal.focusPrevious",
+    "when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
+  },
+  {
+    "key": "ctrl+down",
+    "command": "workbench.action.terminal.focusNext",
+    "when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
   }
 ]
